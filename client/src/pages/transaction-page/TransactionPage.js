@@ -124,7 +124,7 @@ const TransactionPage = () => {
       // send yes to all other branches
       setStepState(`Sent notification to other branches to add the block`);
       setOthersNotification(
-        `Transaction has been added to the blockchain by Branch ${data.branch}`
+        `Transaction has been added to the blockchain by Our system`
       );
     } else if (stepCounter === 11) {
       // add to others and transaction is completed
@@ -139,7 +139,7 @@ const TransactionPage = () => {
       console.log(res3);
       setStepState(`Transaction completed`);
       setOtherStepState(
-        `Block added and transaction completed by Branch ${data.branch}. Congratulation 🔥 `
+        `Block added and transaction completed by Our System. Congratulation 🔥 `
       );
       setIsCompleted(true);
     }
@@ -175,7 +175,7 @@ const TransactionPage = () => {
   return (
     <div className="transactionPage">
       <div className="top">
-        <div>navigate("/")</div>
+        
         <h1>Making a Transaction</h1>
       </div>
       <div className="middle">
