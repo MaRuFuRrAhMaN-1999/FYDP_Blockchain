@@ -8,8 +8,13 @@ const Claim = () => {
   const containerStyle = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: "cover",
-    minHeight: "75vh",
-    padding: "20px",
+    backgroundPosition: "center",
+    minHeight: "80vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    //opacity: 0.5, // Adjust opacity as needed
+    zIndex: -1,
   };
 
   return (

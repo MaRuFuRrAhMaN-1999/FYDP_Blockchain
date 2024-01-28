@@ -28,7 +28,7 @@ const Pay = () => {
                     Pay Premium Now
                   </p>
                   <div className="text-center">
-                    <Button variant="primary"><a href="/" className="text-white">Pay Now</a></Button>
+                    <Button variant="primary"><a href="/home" className="text-white">Pay Now</a></Button>
                   </div>
                 </Card.Body>
               </Card>

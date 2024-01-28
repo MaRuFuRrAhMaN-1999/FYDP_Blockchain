@@ -31,7 +31,7 @@ const Support = () => {
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
-    opacity: 0.5, // Adjust opacity as needed
+    //opacity: 0.5, // Adjust opacity as needed
     zIndex: -1,
   };
 
@@ -39,7 +39,7 @@ const Support = () => {
     <>
       <Header />
       <Container fluid style={containerStyle} className="text-center mt-5">
-        <h1 style={{ color: "white" }}>Support</h1>
+        <h1 style={{ color: "black" }}>Support</h1>
         <Row className="justify-content-center mt-5">
           <Col xs={12} md={6}>
             <Form onSubmit={handleSubmit}>

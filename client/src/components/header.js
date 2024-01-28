@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Navbar, Nav, Form, Image } from 'react-bootstrap';
+import { Container, Navbar, Nav, Button, Form, Image } from 'react-bootstrap';
 
 const Header = () => {
 
@@ -16,25 +16,21 @@ const Header = () => {
               <Image src="../images/logo.jpeg" style={{'width': '100px'}}/>
             </div>
             <div>
-              <p>Contact Us</p>
+            <Button variant="light" type="button" style={{'fontWeight': 'bold' , 'fontSize': '20px'}}>
+            Contact Us
+            </Button>
+              
             </div>
           </div>
         </Container>
-      <Navbar expand="lg" className="bg-body-tertiary mx-auto justify-content-center"> {/* Added justify-content-center */}
-        <Container>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="me-center">
-              <Nav.Link href="/home">Solutions</Nav.Link>
-              <Nav.Link href="/policy">Policies</Nav.Link>
-              <Nav.Link href="/pay">Pay Premium</Nav.Link>
-              <Nav.Link href="/support">Support</Nav.Link>
-              <Nav.Link href="/claim">Claims</Nav.Link>
-              <Nav.Link href="/about">About Us</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      <div className="d-flex justify-content-between mx-5" style={{ 'fontWeight': 'bold', 'fontSize': '20px'}}>
+        <a href="/" style={{'textDecoration': 'none', 'color': 'black'}}>Sulotions</a>
+        <a href="/policy" style={{'textDecoration': 'none', 'color': 'black'}}>My Policy</a>
+        <a href="/pay" style={{'textDecoration': 'none', 'color': 'black'}}>Pay Premium</a>
+        <a href="/support" style={{'textDecoration': 'none', 'color': 'black'}}>Support</a>
+        <a href="/claim" style={{'textDecoration': 'none', 'color': 'black'}}>Claim</a>
+        <a href="/about" style={{'textDecoration': 'none', 'color': 'black'}}>About</a>
+      </div>
     </div>
   );
 };
